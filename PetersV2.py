@@ -17,7 +17,7 @@ RED = (255, 0, 0)
 BLACK = (0, 0, 0)
 
 # -------------------- LOAD IMAGES --------------------
-bg_img = pygame.image.load("fotos/Petetsbs.png").convert()
+bg_img = pygame.image.load("fotos/Petersbg.png").convert()
 bg_img = pygame.transform.scale(bg_img, (W, H))
 
 paddle_img = pygame.image.load("fotos/peddle.png").convert_alpha()
@@ -132,4 +132,5 @@ pygame.time.wait(2000)
 
 pygame.quit()
 sys.exit()
+
 
