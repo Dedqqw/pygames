@@ -18,25 +18,25 @@ RED = (255, 0, 0)
 BLACK = (0, 0, 0)
 
 # -------------------- LOAD IMAGES --------------------
-bg_img = pygame.image.load("Schermafbeelding 2026-02-05 105843.png").convert()
+bg_img = pygame.image.load("fotos/Petersbg.png").convert()
 bg_img = pygame.transform.scale(bg_img, (W, H))
 
-paddle_img = pygame.image.load("Schermafbeelding 2026-01-15 204202.png").convert_alpha()
+paddle_img = pygame.image.load("fotos/peddle.png").convert_alpha()
 paddle_img = pygame.transform.scale(paddle_img, (120, 120))
 
-good_block_img = pygame.image.load("Schermafbeelding 2026-02-05 202438.png").convert_alpha()
+good_block_img = pygame.image.load("fotos/nota.png").convert_alpha()
 good_block_img = pygame.transform.scale(good_block_img, (100, 100))
 
-bad_block_img = pygame.image.load("afbeelding (2).png").convert_alpha()
+bad_block_img = pygame.image.load("fotos/penmakers.png").convert_alpha()
 bad_block_img = pygame.transform.scale(bad_block_img, (100, 100))
 
-rare_block_img = pygame.image.load("le-bon-bon-lebron-james.png").convert_alpha()
+rare_block_img = pygame.image.load("fotos/le-bon-bon-lebron-james.png").convert_alpha()
 rare_block_img = pygame.transform.scale(rare_block_img, (100, 100))
 
-heart_img = pygame.image.load("image.png").convert_alpha()
+heart_img = pygame.image.load("fotos/heart.png").convert_alpha()
 heart_img = pygame.transform.scale(heart_img, (32, 32))
 
-broken_heart_img = pygame.image.load("broken.png").convert_alpha()
+broken_heart_img = pygame.image.load("fotos/broken.png").convert_alpha()
 broken_heart_img = pygame.transform.scale(broken_heart_img, (32, 32))
 
 # -------------------- PLAYER --------------------
@@ -167,3 +167,4 @@ while run:
 
 pygame.quit()
 sys.exit()
+
