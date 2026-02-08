@@ -9,13 +9,13 @@ pygame.display.set_caption("Catch the Falling Blocks")
 
 RED, WHT,BLC = (255, 0, 0), (255, 255, 255), (0,0,0)
 # Load images
-bg_img = pygame.image.load("Schermafbeelding 2026-02-05 105843.png").convert()
+bg_img = pygame.image.load("fotos/Petersbg.png").convert()
 bg_img = pygame.transform.scale(bg_img, (W, H))
 
-block_img = pygame.image.load("Schermafbeelding 2026-02-05 202438.png").convert_alpha()
+block_img = pygame.image.load("fotos/nota.png").convert_alpha()
 block_img = pygame.transform.scale(block_img, (100, 100))
 
-paddle_img = pygame.image.load("Schermafbeelding 2026-01-15 204202.png").convert_alpha()
+paddle_img = pygame.image.load("fotos/peddle.png").convert_alpha()
 paddle_img = pygame.transform.scale(paddle_img, (120, 120))
 
 paddle = paddle_img.get_rect()
@@ -84,3 +84,4 @@ while run:
 
 pygame.quit()
 sys.exit()
+
