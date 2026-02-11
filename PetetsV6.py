@@ -79,7 +79,11 @@ broken_heart_img = pygame.transform.scale(pygame.image.load("fotos/broken.png"),
 paddle_skins = {
     "Peters": {"img": pygame.transform.scale(pygame.image.load("fotos/peddle.png").convert_alpha(), (120,120)), "price": 0},
     "heil Nick": {"img": pygame.transform.scale(pygame.image.load("fotos/nick.png").convert_alpha(), (120,120)), "price": 50},
-    #"blue": {"img": pygame.transform.scale(pygame.image.load("paddle_blue.png").convert_alpha(), (120,120)), "price": 100}
+    "kian": {"img": pygame.transform.scale(pygame.image.load("fotos/kain.png").convert_alpha(), (120,120)), "price": 100},
+    "anthony": {"img": pygame.transform.scale(pygame.image.load("fotos/anthony.png").convert_alpha(), (120,120)), "price": 150},
+    "sam": {"img": pygame.transform.scale(pygame.image.load("fotos/sam.png").convert_alpha(), (120,120)), "price": 200},
+    "nigel": {"img": pygame.transform.scale(pygame.image.load("fotos/nigel.png").convert_alpha(), (120,120)), "price": 250},
+    "OG Emil": {"img": pygame.transform.scale(pygame.image.load("fotos/og emil.png").convert_alpha(), (120,120)), "price": 300}
 }
 
 owned_skins = save["owned_skins"]
@@ -334,3 +338,4 @@ while run:
 
 pygame.quit()
 sys.exit()
+
