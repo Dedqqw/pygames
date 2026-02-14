@@ -122,8 +122,8 @@ play_btn = Button("PLAY", 175, 200, 200, 50)
 shop_btn = Button("SHOP", 175, 260, 200, 50)
 leader_btn = Button("LEADERBOARD", 175, 320, 200, 50)
 back_btn = Button("BACK", 20, 20, 120, 40)
-skin_btn = Button("SKINS PEDDLE", 90, 260, 160, 40)
-bg_btn = Button("BG SKINS", 300, 260, 140, 40 )
+skin_btn = Button("SKINS PEDDLE", 40, 260, 200, 40)
+bg_btn = Button("BG SKINS", 320, 260, 140, 40 )
 
 # ---------------- GAME OBJECTS ----------------
 paddle = paddle_skins[current_skin]["img"].get_rect(midbottom=(W//2, H-10))
@@ -328,11 +328,13 @@ while run:
                 spawn_block()
             elif block_type == "bad":
                 lives -= 1
+                fall_speed -= 1
                 spawn_block()
 
         if block.y > H:
             if block_type !="bad":
                 lives-=1
+                fall_speed -=1
             spawn_block()
 
         if lives <= 0:
@@ -422,3 +424,4 @@ while run:
 
 pygame.quit()
 sys.exit()
+
